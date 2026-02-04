@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Gamer Overlay v2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="canvas">
+        <!-- Minimalist Top Event Bar -->
+        <div class="event-ticker glass">
+            <div class="ticker-item">
+                <span class="ticker-label">LATEST FOLLOWER</span>
+                <span class="ticker-value" id="follower-name">Alex_Streamer</span>
+            </div>
+            <div class="ticker-divider"></div>
+            <div class="ticker-item">
+                <span class="ticker-label">TOP DONATION</span>
+                <span class="ticker-value" id="top-dono">$25.00</span>
+            </div>
+        </div>
+
+        <!-- Floating Generic Stream Goal Widget (Modular) -->
+        <div class="stream-widget glass pulse">
+            <div class="stream-header">
+                <span class="stream-title">STREAM GOAL</span>
+                <div class="status-dot"></div>
+            </div>
+            <div class="stream-body">
+                <div class="goal-info">
+                    <span class="goal-label">SUBSCRIBER GOAL</span>
+                    <span class="goal-count"><span id="current">12</span> / 50</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="bar" style="width: 24%;"></div>
+                </div>
+            </div>
+            <div class="stream-footer" id="generic-cta">
+                <i class="fas fa-heart"></i>
+                <span>SUPPORT THE STREAM</span>
+            </div>
+        </div>
+
+        <!-- Social Icons (Compact) -->
+        <div class="social-cluster">
+            <div class="social-icon glass" title="Twitter"><i class="fab fa-twitter"></i></div>
+            <div class="social-icon glass" title="YouTube"><i class="fab fa-youtube"></i></div>
+            <div class="social-icon glass" title="Twitch"><i class="fab fa-twitch"></i></div>
+        </div>
+
+        <!-- Notification Area -->
+        <div id="toast-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
